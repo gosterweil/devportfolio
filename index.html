@@ -30,6 +30,7 @@
             <li>
                 <a href="#experience">Experience</a>
             </li>
+            <li> <a href="#projects">Projects</a></li>
             <li>
                 <a href="#education">Education</a>
             </li>
@@ -64,23 +65,6 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        I'm a student currently studying Computer Science at Hofstra University. I have a particular interest in InfoSec. I enjoy finding creative ways to break software. (And fixing the issues.)  
-                        In my spare time I like to play games of all varieties, physical and digital.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
@@ -92,24 +76,73 @@
             </div>
         </div>
     <!-- End #experience -->
-
+    <div id="projects" class="background-alt">
+            <h2 class="heading">Projects</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="project no-image">
+                        <div class="project-info">
+                            <h3>VI2SQL</h3>
+                            <p>
+                                A ruby script I wrote for Hofstra CS to automate data gathering on VMWare VMs. It uses vSphere web services API to pull VM properties and write them to a MysQL database.
+                            </p>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+    
+                    <div class="project no-image">
+                        <div class="project-info">
+                            <h3> LDAP Sync</h3>
+                            <p>
+                                A couple of perl scripts which sync data between MySQL and Hofstra's LDAP AD servers, ensuring both sources have the data we need
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project no-image">
+                        <div class="project-info">
+                            <h3> vSphere utils</h3>
+                            <p> A collection of several Ruby scripts I made to automate VM maintenance and cleanup tasks.       </p>
+                                <p> They're written in a UNIX style, with each tool implementing a single task in a way that can be easily piped together </p>
+                                <p> The lsvi script writes properties such as VM owners from vSphere to STDOUT in configurable format </p>
+                                <p> hofad takes STDIN input from lsvi and checks AD, outputting user info like ID, name, and if the account is disabled </p>
+                                <p> vm_batch takes VM paths as input and allows us to quickly power off, move or delete large numbers of VMs from (e.g.) disabled accounts</p>
+                        </div>
+                        </div>
+                        <div class="project no-image">
+                            <div class="project-info">
+                                <h3> IP Block Update</h3>
+                                <p> A Python script that tracks IP range availability for VM use. </p>
+                                <p> It marks input IP ranges as assigned or free in MySQ so we know what IPs can be used. </p>
+                                <p> It splits or merges rows in MySQL as needed, allowing flexibility in assignments</p>
+                            
+                            </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+            </div>
+        </div>
+        <!-- End #projects -->
+    
+    </div>
     <div id="education">
         <h2 class="heading">Education</h2>
     
         <div class="education-block">
             <h3>Hofstra University</h3>
             <span class="education-date">Sept 2016 - Expected Spring 2020</span>
-            <h4>Bachelor of Science in Computer Science</h4>
+            <h4>Bachelor of Science in Computer Science: Conc. in Networking and Cybersecurity</h4>
             <h4>Current GPA: 4.0</h4> 
             <ul>
                 <li>
                     Fund. of Computer Science III
                 </li>
                 <li>
-                    Discrete Mathematics II
+                   Computer Architecture
                 </li>
                 <li>
-                    Algorithms and Data Structures (current)
+                    Algorithms and Data Structures
                 </li>
             </ul>
         </div>
